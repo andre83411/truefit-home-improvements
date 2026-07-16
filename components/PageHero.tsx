@@ -1,0 +1,1 @@
+export function PageHero({eyebrow,title,children}:{eyebrow:string;title:string;children:React.ReactNode}){return <section className="page-hero"><div className="container narrow"><span className="eyebrow gold">{eyebrow}</span><h1>{title}</h1><p>{children}</p></div></section>}
