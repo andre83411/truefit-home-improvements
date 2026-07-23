@@ -49,4 +49,24 @@ export const galleryProjects = [
     height: 1536,
     alt: "Before and after comparison of stairs finished with wood-look treads and risers",
   },
+  {
+    title: "Townhome pantry shelving upgrade",
+    category: "Custom Shelving",
+    description:
+      "A single wire shelf was replaced with four substantial wood shelves to make better use of the pantry.",
+    image: "/gallery/townhome-pantry-before-after.png",
+    width: 1003,
+    height: 1568,
+    alt: "Before and after comparison of a townhome pantry upgraded from one wire shelf to four wood shelves",
+  },
+  {
+    title: "A pantry made more useful",
+    category: "Storage Improvements",
+    description:
+      "The completed shelving provides practical space for food, small appliances, and everyday household supplies.",
+    image: "/gallery/townhome-pantry-organized-before-after.png",
+    width: 1024,
+    height: 1536,
+    alt: "Before, after, and organized views of a townhome pantry with newly installed wood shelving",
+  },
 ];
