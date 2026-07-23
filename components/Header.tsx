@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Phone } from "./icons";
 
-const nav = [["Home","/"],["About","/about"],["Services","/services"],["Service Areas","/service-areas"],["Gallery","/gallery"],["Reviews","/reviews"],["Contact","/contact"]];
+const nav = [["Home","/"],["About","/about"],["Services","/services"],["Service Areas","/service-areas"],["Gallery","/gallery"],["Contact","/contact"]];
 export function Header() {
   const [open, setOpen] = useState(false); const path = usePathname();
   return <>
