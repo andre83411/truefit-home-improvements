@@ -16,7 +16,6 @@ Requirements: Node.js 22.13 or newer and npm.
 
 Search the project for these placeholders and replace them with verified business information:
 
-- `(000) 000-0000` and `+10000000000`
 - `hello@example.com`
 - `https://www.example.com`
 - `Google review link placeholder`

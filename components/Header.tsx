@@ -9,7 +9,7 @@ export function Header() {
   const [open, setOpen] = useState(false); const path = usePathname();
   return <>
     <a className="skip-link" href="#main">Skip to content</a>
-    <div className="topbar"><div className="container topbar-inner"><span>Locally owned • Serving Sumter &amp; Lake Counties</span><a href="tel:+10000000000"><Phone/> (000) 000-0000</a></div></div>
+    <div className="topbar"><div className="container topbar-inner"><span>Locally owned • Serving Sumter &amp; Lake Counties</span><a href="tel:+14076008738"><Phone/> 407-600-8738</a></div></div>
     <header className="header"><div className="container nav-wrap">
       <Link className="brand" href="/" aria-label="TrueFit Home Improvements home"><span className="brand-mark">TF</span><span><b>TRUEFIT</b><small>HOME IMPROVEMENTS</small></span></Link>
       <button className="menu-button" aria-expanded={open} aria-controls="primary-nav" onClick={()=>setOpen(!open)}><span className="sr-only">Menu</span><i/><i/><i/></button>
