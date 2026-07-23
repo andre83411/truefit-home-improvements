@@ -44,7 +44,7 @@ export const galleryProjects = [
     category: "Stairs & Flooring",
     description:
       "A full stair refresh with coordinated wood-look treads and risers.",
-    image: "/gallery/airbnb-stairs-flooring-before-after.png",
+    image: "/gallery/airbnb-stairs-flooring-before-after-v2.png",
     width: 1800,
     height: 2200,
     alt: "Before and after comparison of stairs finished with wood-look treads and risers",
