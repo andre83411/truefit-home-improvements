@@ -1,6 +1,6 @@
 # TrueFit Home Improvements website
 
-A responsive Next.js and TypeScript website for TrueFit Home Improvements. It includes local-search metadata, accessible navigation, editable content collections, a project gallery, legal pages, and a validated quote-request workflow with optional image uploads.
+A responsive Next.js and TypeScript website for TrueFit Home Improvements. It includes local-search metadata, accessible navigation, editable content collections, a project gallery, legal pages, and a validated quote-request workflow.
 
 ## Local setup
 
@@ -40,14 +40,14 @@ The browser submits to `/api/quote`. The server validates required fields, email
 
 1. Create a multipart-capable form endpoint (Formspree is a simple option).
 2. Add its endpoint URL as `QUOTE_FORM_ENDPOINT` in local and production environment settings.
-3. Submit a real test with and without images after deployment.
+3. Submit a real test after deployment.
 4. Confirm delivery, reply-to behavior, and the provider’s retention settings.
 
 If the endpoint is absent or rejects a request, the visitor sees an error and is directed to call or email. The interface also includes sending and success states.
 
 ### Recommended spam and upload protection
 
-Before promoting the site, enable the form provider’s CAPTCHA or Turnstile support, rate limiting, notification rules, and file scanning. For higher volume, add Cloudflare Turnstile verification in the UI and validate its token in `/api/quote`. Consider direct uploads to a private object-storage bucket with expiring links rather than forwarding large attachments. Never publish customer-submitted project photos without permission.
+Before promoting the site, enable the form provider’s CAPTCHA or Turnstile support, rate limiting, and notification rules. For higher volume, add Cloudflare Turnstile verification in the UI and validate its token in `/api/quote`.
 
 ## Deploying to Vercel
 
