@@ -1,3 +1,44 @@
-import type { Metadata } from "next"; import { Shell } from "@/components/Shell"; import { PageHero } from "@/components/PageHero"; import { CTA } from "@/components/CTA"; import { galleryProjects } from "@/data/gallery";
-export const metadata:Metadata={title:"Project Gallery",description:"View project placeholders for TrueFit Home Improvements handyman and home improvement work in Central Florida."};
-export default function Gallery(){return <Shell><PageHero eyebrow="PROJECT GALLERY" title="The details make the difference.">This gallery is ready for authentic TrueFit project photography. Replace the clearly labeled placeholders before launch.</PageHero><section className="section"><div className="container gallery-grid">{galleryProjects.map((p,i)=><figure key={p.title}><div className={`gallery-placeholder tone-${i+1}`} role="img" aria-label="Placeholder for a future TrueFit project photograph"><span>PROJECT PHOTO</span></div><figcaption><span>{p.category}</span><h2>{p.title}</h2><p>{p.description}</p></figcaption></figure>)}</div></section><CTA/></Shell>}
+import type { Metadata } from "next";
+import Image from "next/image";
+import { Shell } from "@/components/Shell";
+import { PageHero } from "@/components/PageHero";
+import { CTA } from "@/components/CTA";
+import { galleryProjects } from "@/data/gallery";
+
+export const metadata: Metadata = {
+  title: "Home Improvement Project Gallery",
+  description:
+    "See before-and-after flooring and home improvement projects completed by TrueFit Home Improvements in Central Florida.",
+};
+
+export default function Gallery() {
+  return (
+    <Shell>
+      <PageHero eyebrow="PROJECT GALLERY" title="The details make the difference.">
+        Explore before-and-after views of recent TrueFit home improvement work.
+      </PageHero>
+      <section className="section">
+        <div className="container gallery-grid">
+          {galleryProjects.map((project) => (
+            <figure key={project.image}>
+              <Image
+                className="gallery-image"
+                src={project.image}
+                alt={project.alt}
+                width={project.width}
+                height={project.height}
+                sizes="(max-width: 760px) calc(100vw - 30px), 575px"
+              />
+              <figcaption>
+                <span>{project.category}</span>
+                <h2>{project.title}</h2>
+                <p>{project.description}</p>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+      <CTA />
+    </Shell>
+  );
+}

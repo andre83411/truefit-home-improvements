@@ -1,8 +1,52 @@
 export const galleryProjects = [
-  { title: "Interior trim refresh", category: "Trim", description: "Replace with a finished-project photo and brief, accurate caption.", image: "/placeholders/project-1.svg" },
-  { title: "LVP flooring project", category: "Flooring", description: "Replace with a finished-project photo and brief, accurate caption.", image: "/placeholders/project-2.svg" },
-  { title: "Fresh paint and details", category: "Painting", description: "Replace with a finished-project photo and brief, accurate caption.", image: "/placeholders/project-3.svg" },
-  { title: "Drywall repair", category: "Repairs", description: "Replace with a finished-project photo and brief, accurate caption.", image: "/placeholders/project-4.svg" },
-  { title: "Interior door update", category: "Doors", description: "Replace with a finished-project photo and brief, accurate caption.", image: "/placeholders/project-5.svg" },
-  { title: "Fixture upgrade", category: "Fixtures", description: "Replace with a finished-project photo and brief, accurate caption.", image: "/placeholders/project-6.svg" },
+  {
+    title: "Bedroom flooring transformation",
+    category: "LVP Flooring",
+    description:
+      "A before-and-after look at a bedroom updated from carpet to light wood-look flooring.",
+    image: "/gallery/airbnb-bedroom-flooring-before-after.jpg",
+    width: 2400,
+    height: 1600,
+    alt: "Before and after comparison of a carpeted bedroom updated with light wood-look flooring",
+  },
+  {
+    title: "Hallway flooring update",
+    category: "LVP Flooring",
+    description:
+      "New flooring creates a clean, continuous finish through this hallway.",
+    image: "/gallery/airbnb-hallway-flooring-before-after.jpg",
+    width: 2400,
+    height: 1600,
+    alt: "Before and after comparison of a hallway flooring installation",
+  },
+  {
+    title: "Twin bedroom flooring refresh",
+    category: "LVP Flooring",
+    description:
+      "Carpet was replaced with a durable wood-look surface for a brighter, refreshed room.",
+    image: "/gallery/airbnb-twin-bedroom-flooring-before-after.jpg",
+    width: 2400,
+    height: 1600,
+    alt: "Before and after comparison of a twin bedroom updated from carpet to wood-look flooring",
+  },
+  {
+    title: "Guest room flooring update",
+    category: "LVP Flooring",
+    description:
+      "A second view of the finished flooring and its clean transition through the room.",
+    image: "/gallery/airbnb-twin-bedroom-side-flooring-before-after.jpg",
+    width: 2400,
+    height: 1600,
+    alt: "Before and after side view of a guest bedroom flooring update",
+  },
+  {
+    title: "Stair flooring transformation",
+    category: "Stairs & Flooring",
+    description:
+      "A full stair refresh with coordinated wood-look treads and risers.",
+    image: "/gallery/airbnb-stairs-flooring-before-after.png",
+    width: 1024,
+    height: 1536,
+    alt: "Before and after comparison of stairs finished with wood-look treads and risers",
+  },
 ];
