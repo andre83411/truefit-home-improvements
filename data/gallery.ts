@@ -1,3 +1,44 @@
+export const beforeAfterProjects = [
+  {
+    title: "Custom closet transformation",
+    category: "Custom Storage & Fixtures",
+    description:
+      "A basic wire-shelf closet transformed with custom-made built-in shelving, a hanging system, and a vanity. We also installed the homeowner-selected mirror, chandelier, and finishing décor.",
+    comparisons: [
+      {
+        label: "Vanity and built-ins",
+        before: {
+          image: "/gallery/closet-transformation/angle-1-before.jpeg",
+          width: 1125,
+          height: 1498,
+          alt: "Closet before the custom vanity and built-in shelving installation",
+        },
+        after: {
+          image: "/gallery/closet-transformation/angle-1-after.jpeg",
+          width: 1125,
+          height: 1498,
+          alt: "Finished closet with custom built-in shelving, vanity, mirror, chandelier, and décor",
+        },
+      },
+      {
+        label: "Shelving and hanging system",
+        before: {
+          image: "/gallery/closet-transformation/angle-2-before.jpeg",
+          width: 1125,
+          height: 1498,
+          alt: "Closet before the wire shelf was replaced with custom storage",
+        },
+        after: {
+          image: "/gallery/closet-transformation/angle-2-after.jpeg",
+          width: 1125,
+          height: 1498,
+          alt: "Finished closet with custom shelving, storage, and hanging space",
+        },
+      },
+    ],
+  },
+];
+
 export const galleryProjects = [
   {
     title: "Bedroom flooring transformation",
