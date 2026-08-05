@@ -15,7 +15,8 @@ export default function Gallery() {
   return (
     <Shell>
       <PageHero eyebrow="PROJECT GALLERY" title="The details make the difference.">
-        Explore before-and-after views of recent TrueFit home improvement work.
+        Explore before-and-after views of recent TrueFit custom storage,
+        flooring, and home improvement work.
       </PageHero>
       <section className="section">
         <div className="container before-after-list">
