@@ -1,5 +1,38 @@
 export const beforeAfterProjects = [
   {
+    title: "Modern wire railing installation",
+    category: "Railing & Finish Work",
+    description:
+      "For this early-1900s home renovation, we installed a clean-lined black wire railing that complements the property's fully modernized interior and gives the upstairs landing a striking finished look.",
+    comparisons: [
+      {
+        label: "Upstairs landing transformation",
+        before: {
+          image: "/gallery/wire-railing-transformation/before.jpeg",
+          width: 1125,
+          height: 1472,
+          alt: "Upstairs landing before the wire railing installation during renovation",
+        },
+        after: {
+          image: "/gallery/wire-railing-transformation/after-main.jpeg",
+          width: 1125,
+          height: 1472,
+          alt: "Finished black wire railing installed around the upstairs landing",
+        },
+      },
+    ],
+    details: [
+      {
+        image:
+          "/gallery/wire-railing-transformation/after-second-view.jpeg",
+        width: 1125,
+        height: 1472,
+        alt: "Second view of the finished black wire railing installation",
+        label: "Finished railing — second view",
+      },
+    ],
+  },
+  {
     title: "Custom closet transformation",
     category: "Custom Storage & Fixtures",
     description:
@@ -36,6 +69,7 @@ export const beforeAfterProjects = [
         },
       },
     ],
+    details: [],
   },
 ];
 

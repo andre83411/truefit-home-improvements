@@ -51,6 +51,22 @@ export default function Gallery() {
                   </figure>
                 ))}
               </div>
+              {project.details.length > 0 && (
+                <div className="project-detail-list">
+                  {project.details.map((detail) => (
+                    <figure className="project-detail" key={detail.image}>
+                      <figcaption>{detail.label}</figcaption>
+                      <Image
+                        src={detail.image}
+                        alt={detail.alt}
+                        width={detail.width}
+                        height={detail.height}
+                        sizes="(max-width: 760px) calc(100vw - 66px), 520px"
+                      />
+                    </figure>
+                  ))}
+                </div>
+              )}
             </article>
           ))}
         </div>
