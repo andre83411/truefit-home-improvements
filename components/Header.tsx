@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Phone } from "./icons";
 
-const nav = [["Home","/"],["About","/about"],["Services","/services"],["Service Areas","/service-areas"],["Gallery","/gallery"],["Contact","/contact"]];
+const nav = [["Home","/"],["About","/about"],["Services","/services"],["Service Areas","/service-areas"],["Gallery","/gallery"],["Blog","/blog"],["Contact","/contact"]];
 export function Header() {
   const [open, setOpen] = useState(false); const path = usePathname();
   return <>
@@ -13,7 +13,7 @@ export function Header() {
     <header className="header"><div className="container nav-wrap">
       <Link className="brand" href="/" aria-label="TrueFit Home Improvements home"><span className="brand-mark">TF</span><span><b>TRUEFIT</b><small>HOME IMPROVEMENTS</small></span></Link>
       <button className="menu-button" aria-expanded={open} aria-controls="primary-nav" onClick={()=>setOpen(!open)}><span className="sr-only">Menu</span><i/><i/><i/></button>
-      <nav id="primary-nav" className={open ? "nav open" : "nav"} aria-label="Primary navigation">{nav.map(([label,href])=><Link key={href} className={path===href?"active":""} href={href} onClick={()=>setOpen(false)}>{label}</Link>)}<Link className="button nav-quote" href="/request-a-quote">Request a Quote</Link></nav>
+      <nav id="primary-nav" className={open ? "nav open" : "nav"} aria-label="Primary navigation">{nav.map(([label,href])=><Link key={href} className={path===href||path.startsWith(`${href}/`)?"active":""} href={href} onClick={()=>setOpen(false)}>{label}</Link>)}<Link className="button nav-quote" href="/request-a-quote">Request a Quote</Link></nav>
     </div></header>
   </>;
 }

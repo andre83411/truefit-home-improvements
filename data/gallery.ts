@@ -31,6 +31,7 @@ export const beforeAfterProjects = [
         label: "Finished railing — second view",
       },
     ],
+    storyHref: "",
   },
   {
     title: "Custom closet transformation",
@@ -70,6 +71,7 @@ export const beforeAfterProjects = [
       },
     ],
     details: [],
+    storyHref: "/blog/builder-closet-transformation-tavares-fl",
   },
 ];
 

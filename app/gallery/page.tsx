@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { Shell } from "@/components/Shell";
 import { PageHero } from "@/components/PageHero";
 import { CTA } from "@/components/CTA";
@@ -66,6 +67,11 @@ export default function Gallery() {
                     </figure>
                   ))}
                 </div>
+              )}
+              {project.storyHref && (
+                <Link className="button button-navy project-story-link" href={project.storyHref}>
+                  Read this project story
+                </Link>
               )}
             </article>
           ))}
