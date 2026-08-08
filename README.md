@@ -16,7 +16,7 @@ Requirements: Node.js 22.13 or newer and npm.
 
 Search the project for these placeholders and replace them with verified business information:
 
-- `https://www.example.com`
+- `https://www.truefithome.com`
 - `Google review link placeholder`
 - Owner and project photograph placeholders
 - License and insurance details, only if TrueFit supplies current, verifiable information
