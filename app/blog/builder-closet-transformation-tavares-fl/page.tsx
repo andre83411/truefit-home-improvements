@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "article",
     url,
     images: [{
-      url: "/gallery/closet-transformation/angle-1-after.jpeg",
+      url: "/gallery/closet-transformation/angle-1-after.webp",
       width: 1125,
       height: 1498,
       alt: "Finished custom closet with shelving, hanging space, and a vanity in Tavares, Florida",
@@ -33,8 +33,8 @@ const articleSchema = {
   headline: title,
   description,
   image: [
-    "https://www.truefithome.com/gallery/closet-transformation/angle-1-after.jpeg",
-    "https://www.truefithome.com/gallery/closet-transformation/angle-2-after.jpeg",
+    "https://www.truefithome.com/gallery/closet-transformation/angle-1-after.webp",
+    "https://www.truefithome.com/gallery/closet-transformation/angle-2-after.webp",
   ],
   datePublished: "2026-08-06",
   dateModified: "2026-08-06",
@@ -81,11 +81,11 @@ export default function ClosetStory() {
 
             <figure className="article-comparison">
               <div>
-                <Image src="/gallery/closet-transformation/angle-1-before.jpeg" alt="Builder-model closet in Tavares before custom shelving was installed" width={1125} height={1498} sizes="(max-width: 760px) calc(50vw - 24px), 380px" />
+                <Image src="/gallery/closet-transformation/angle-1-before.webp" alt="Builder-model closet in Tavares before custom shelving was installed" width={1125} height={1498} sizes="(max-width: 760px) calc(50vw - 24px), 380px" />
                 <span>Before</span>
               </div>
               <div>
-                <Image src="/gallery/closet-transformation/angle-1-after.jpeg" alt="Tavares closet after custom shelving, hanging space, vanity, mirror, and lighting were installed" width={1125} height={1498} sizes="(max-width: 760px) calc(50vw - 24px), 380px" />
+                <Image src="/gallery/closet-transformation/angle-1-after.webp" alt="Tavares closet after custom shelving, hanging space, vanity, mirror, and lighting were installed" width={1125} height={1498} sizes="(max-width: 760px) calc(50vw - 24px), 380px" />
                 <span>After</span>
               </div>
               <figcaption>From one wire shelf to a complete storage and personal-care space.</figcaption>
@@ -109,11 +109,11 @@ export default function ClosetStory() {
 
             <figure className="article-comparison">
               <div>
-                <Image src="/gallery/closet-transformation/angle-2-before.jpeg" alt="Second view of the Tavares closet before the storage transformation" width={1125} height={1498} sizes="(max-width: 760px) calc(50vw - 24px), 380px" />
+                <Image src="/gallery/closet-transformation/angle-2-before.webp" alt="Second view of the Tavares closet before the storage transformation" width={1125} height={1498} sizes="(max-width: 760px) calc(50vw - 24px), 380px" />
                 <span>Before</span>
               </div>
               <div>
-                <Image src="/gallery/closet-transformation/angle-2-after.jpeg" alt="Finished wood shelving and custom hanging area in the Tavares closet" width={1125} height={1498} sizes="(max-width: 760px) calc(50vw - 24px), 380px" />
+                <Image src="/gallery/closet-transformation/angle-2-after.webp" alt="Finished wood shelving and custom hanging area in the Tavares closet" width={1125} height={1498} sizes="(max-width: 760px) calc(50vw - 24px), 380px" />
                 <span>After</span>
               </div>
               <figcaption>Custom shelving and hanging space make better use of the builder-model footprint.</figcaption>

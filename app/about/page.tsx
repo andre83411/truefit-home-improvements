@@ -26,14 +26,14 @@ export default function About() {
         <div className="container story-grid">
           <div className="owner-portraits" aria-label="TrueFit owners">
             <Image
-              src="/team/owner-headshot-woman.png"
+              src="/team/owner-headshot-woman.webp"
               alt="Professional portrait of a TrueFit Home Improvements co-owner"
               width={1023}
               height={1537}
               sizes="(max-width: 760px) calc(50vw - 23px), 220px"
             />
             <Image
-              src="/team/owner-headshot-man.png"
+              src="/team/owner-headshot-man.webp"
               alt="Professional portrait of a TrueFit Home Improvements co-owner"
               width={1086}
               height={1448}
