@@ -6,7 +6,7 @@ export const projectStories = [
       "See how a basic builder-model closet became an organized, stylish space with custom wood shelving, dedicated hanging areas, and a personal-care vanity.",
     category: "Custom Storage",
     location: "Tavares, Lake County, Florida",
-    image: "/gallery/closet-transformation/angle-1-after.webp",
+    image: "/gallery/closet-transformation/angle-1-after.jpg",
     imageAlt:
       "Finished custom closet in Tavares with white shelving, hanging areas, storage baskets, and a vanity",
     published: "August 6, 2026",
