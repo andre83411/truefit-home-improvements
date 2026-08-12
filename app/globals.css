@@ -19,3 +19,4 @@
 .hero-visual picture{display:block}.hero-photo{display:block;width:100%;height:520px;object-fit:cover;object-position:center;border:1px solid rgba(255,255,255,.35)}
 @media(max-width:760px){.hero-photo{height:390px}}
 @media(max-width:760px){.pergolux-grid{grid-template-columns:1fr;gap:38px}.pergolux-logo-panel{min-height:240px;padding:40px}.pergolux-logo-panel img{max-width:330px}.pergolux-actions{align-items:flex-start;flex-direction:column;gap:15px}}
+.home-pergolux{background:linear-gradient(135deg,#f6f3ec 0%,#fff 70%);border-top:1px solid #e5e0d6;border-bottom:1px solid #e5e0d6}

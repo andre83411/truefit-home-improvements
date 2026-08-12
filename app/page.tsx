@@ -1,6 +1,49 @@
-import Link from "next/link"; import { Shell } from "@/components/Shell"; import { CTA } from "@/components/CTA"; import { Arrow, Check, Pin } from "@/components/icons"; import { services } from "@/data/services"; import { locations } from "@/data/locations";
-export default function Home(){return <Shell><section className="hero"><div className="hero-texture"/><div className="container hero-grid"><div><span className="eyebrow">HUSBAND-AND-WIFE OWNED • LOCAL SERVICE</span><h1>Good work.<br/><em>Done right.</em></h1><p className="lead">Handyman help and thoughtful home improvements for homeowners, landlords, and property managers across Sumter and Lake Counties.</p><div className="hero-actions"><Link className="button button-gold" href="/request-a-quote">Request a Free Quote <Arrow/></Link><Link className="text-link" href="/services">Explore our services <Arrow/></Link></div><div className="trust-row"><span><Check/> Clear communication</span><span><Check/> Respectful service</span><span><Check/> Detail-minded work</span></div></div><div className="hero-visual"><picture><source type="image/avif" srcSet="/truefit-home-office-640.avif 640w, /truefit-home-office-960.avif 960w, /truefit-home-office-1280.avif 1280w, /truefit-home-office-1536.avif 1536w" sizes="(max-width: 760px) calc(100vw - 30px), 48vw"/><source type="image/jpeg" srcSet="/truefit-home-office-640.jpg 640w, /truefit-home-office-960.jpg 960w, /truefit-home-office-1280.jpg 1280w, /truefit-home-office-1536.jpg 1536w" sizes="(max-width: 760px) calc(100vw - 30px), 48vw"/><img className="hero-photo" src="/truefit-home-office-960.jpg" alt="TrueFit Home Improvements office featuring navy cabinetry, warm wood finishes, and the TrueFit wall logo" width="1536" height="1024" fetchPriority="high" decoding="async"/></picture><div className="quality-card"><b>QUALITY</b><span>IMPROVEMENTS.</span><b>LASTING</b><span>RESULTS.</span></div></div></div></section>
-<section className="intro section"><div className="container split"><div><span className="eyebrow navy">HOW WE CAN HELP</span><h2>Small projects.<br/>A big difference at home.</h2></div><div><p className="large-copy">From the repair that’s been waiting to the update that makes a room feel finished, TrueFit brings a practical, considerate approach to every project.</p><Link className="text-link dark" href="/about">Meet the owners <Arrow/></Link></div></div><div className="container service-grid">{services.map((s,i)=><article className="service-card" key={s.slug}><span>0{i+1}</span><h3>{s.title}</h3><p>{s.description}</p><Link href={`/services#${s.slug}`} aria-label={`Learn about ${s.title}`}><Arrow/></Link></article>)}</div></section>
-<section className="process section"><div className="container"><span className="eyebrow gold">A SIMPLE, STRAIGHTFORWARD PROCESS</span><div className="process-grid"><div><h2>Home projects shouldn’t feel complicated.</h2><p>We keep the next step clear, from your first message through the final walkthrough.</p></div>{[["01","Tell us what you need"],["02","Review the project details"],["03","Schedule the work"],["04","Enjoy the result"]].map(([n,t])=><div className="process-step" key={n}><span>{n}</span><h3>{t}</h3></div>)}</div></div></section>
-<section className="areas section"><div className="container areas-grid"><div><span className="eyebrow navy">PROUDLY SERVING CENTRAL FLORIDA</span><h2>Local service, close to home.</h2><p>TrueFit serves communities throughout Sumter County and Lake County, including:</p><div className="location-list">{locations.slice(0,6).map(l=><span key={l.name}><Pin/>{l.name}</span>)}</div><Link className="button button-navy" href="/service-areas">View Service Areas <Arrow/></Link></div><div className="map-card"><div className="map-rings"/><span>SUMTER<br/><b>&amp;</b><br/>LAKE</span><small>COUNTIES, FLORIDA</small></div></div></section>
-<CTA/></Shell>}
+import Link from "next/link";
+import { Shell } from "@/components/Shell";
+import { CTA } from "@/components/CTA";
+import { Arrow, Check, Pin } from "@/components/icons";
+import { services } from "@/data/services";
+import { locations } from "@/data/locations";
+
+export default function Home() {
+  return (
+    <Shell>
+      <section className="hero">
+        <div className="hero-texture" />
+        <div className="container hero-grid">
+          <div>
+            <span className="eyebrow">HUSBAND-AND-WIFE OWNED • LOCAL SERVICE</span>
+            <h1>Good work.<br /><em>Done right.</em></h1>
+            <p className="lead">Handyman help and thoughtful home improvements for homeowners, landlords, and property managers across Sumter and Lake Counties.</p>
+            <div className="hero-actions"><Link className="button button-gold" href="/request-a-quote">Request a Free Quote <Arrow /></Link><Link className="text-link" href="/services">Explore our services <Arrow /></Link></div>
+            <div className="trust-row"><span><Check /> Clear communication</span><span><Check /> Respectful service</span><span><Check /> Detail-minded work</span></div>
+          </div>
+          <div className="hero-visual">
+            <picture><source type="image/avif" srcSet="/truefit-home-office-640.avif 640w, /truefit-home-office-960.avif 960w, /truefit-home-office-1280.avif 1280w, /truefit-home-office-1536.avif 1536w" sizes="(max-width: 760px) calc(100vw - 30px), 48vw" /><source type="image/jpeg" srcSet="/truefit-home-office-640.jpg 640w, /truefit-home-office-960.jpg 960w, /truefit-home-office-1280.jpg 1280w, /truefit-home-office-1536.jpg 1536w" sizes="(max-width: 760px) calc(100vw - 30px), 48vw" /><img className="hero-photo" src="/truefit-home-office-960.jpg" alt="TrueFit Home Improvements office featuring navy cabinetry, warm wood finishes, and the TrueFit wall logo" width="1536" height="1024" fetchPriority="high" decoding="async" /></picture>
+            <div className="quality-card"><b>QUALITY</b><span>IMPROVEMENTS.</span><b>LASTING</b><span>RESULTS.</span></div>
+          </div>
+        </div>
+      </section>
+      <section className="intro section">
+        <div className="container split"><div><span className="eyebrow navy">HOW WE CAN HELP</span><h2>Small projects.<br />A big difference at home.</h2></div><div><p className="large-copy">From the repair that’s been waiting to the update that makes a room feel finished, TrueFit brings a practical, considerate approach to every project.</p><Link className="text-link dark" href="/about">Meet the owners <Arrow /></Link></div></div>
+        <div className="container service-grid">{services.map((service, index) => <article className="service-card" key={service.slug}><span>0{index + 1}</span><h3>{service.title}</h3><p>{service.description}</p><Link href={`/services#${service.slug}`} aria-label={`Learn about ${service.title}`}><Arrow /></Link></article>)}</div>
+      </section>
+      <section className="home-pergolux section" aria-labelledby="home-pergolux-title">
+        <div className="container pergolux-grid">
+          <div className="pergolux-logo-panel"><img src="/partners/pergolux-logo.png" alt="PERGOLUX" width="512" height="119" /><span>AUTHORIZED PARTNER</span></div>
+          <div className="pergolux-copy">
+            <span className="eyebrow navy">PERGOLA INSTALLATION</span>
+            <h2 id="home-pergolux-title">More shade. More comfort. More time outdoors.</h2>
+            <p className="large-copy">We are an <a href="https://pergoluxshop.com">Authorized PERGOLUX Partner</a>.</p>
+            <p>PERGOLUX builds motorized louvered pergolas: the louvers open, close, and adjust at the touch of a button, so you get shade when you want it and cover when the weather turns. TrueFit provides thoughtful site review and professional installation for freestanding backyard structures and wall-mounted patio covers.</p>
+            <p>We serve Sumter and Lake Counties, including The Villages, Wildwood, Lady Lake, Leesburg, Fruitland Park, Bushnell, and surrounding Central Florida communities.</p>
+            <div className="pergolux-actions"><Link className="button button-navy" href="/request-a-quote">Request a PERGOLUX quote <Arrow /></Link><Link className="text-link dark" href="/services#pergolux">Learn about PERGOLUX installation <Arrow /></Link></div>
+          </div>
+        </div>
+      </section>
+      <section className="process section"><div className="container"><span className="eyebrow gold">A SIMPLE, STRAIGHTFORWARD PROCESS</span><div className="process-grid"><div><h2>Home projects shouldn’t feel complicated.</h2><p>We keep the next step clear, from your first message through the final walkthrough.</p></div>{[["01", "Tell us what you need"], ["02", "Review the project details"], ["03", "Schedule the work"], ["04", "Enjoy the result"]].map(([number, title]) => <div className="process-step" key={number}><span>{number}</span><h3>{title}</h3></div>)}</div></div></section>
+      <section className="areas section"><div className="container areas-grid"><div><span className="eyebrow navy">PROUDLY SERVING CENTRAL FLORIDA</span><h2>Local service, close to home.</h2><p>TrueFit serves communities throughout Sumter County and Lake County, including:</p><div className="location-list">{locations.slice(0, 6).map((location) => <span key={location.name}><Pin />{location.name}</span>)}</div><Link className="button button-navy" href="/service-areas">View Service Areas <Arrow /></Link></div><div className="map-card"><div className="map-rings" /><span>SUMTER<br /><b>&amp;</b><br />LAKE</span><small>COUNTIES, FLORIDA</small></div></div></section>
+      <CTA />
+    </Shell>
+  );
+}
