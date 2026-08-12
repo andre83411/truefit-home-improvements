@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { Shell } from "@/components/Shell";
 import { PageHero } from "@/components/PageHero";
@@ -22,7 +21,7 @@ export default function Services() {
       <section className="pergolux-section section" id="pergolux">
         <div className="container pergolux-grid">
           <div className="pergolux-logo-panel">
-            <Image src="/partners/pergolux-logo.png" alt="PERGOLUX" width={512} height={119} sizes="(max-width: 760px) 70vw, 360px" priority />
+            <img src="/partners/pergolux-logo.png" alt="PERGOLUX" width="512" height="119" />
             <span>AUTHORIZED PARTNER</span>
           </div>
           <div className="pergolux-copy">
